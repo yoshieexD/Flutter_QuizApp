@@ -35,7 +35,9 @@ class ResultsScreen extends StatelessWidget {
         margin: const EdgeInsets.all(40),
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Text(
-            'You asnwered $numCorrectQuestions out of $numTotalQuestions questions correctly!',
+            'You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!',
+            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(
             height: 30,
@@ -44,7 +46,7 @@ class ResultsScreen extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          TextButton(onPressed: () {}, child: const Text('Restart Quiz')),
+          ElevatedButton(onPressed: () {}, child: const Text('Restart Quiz')),
         ]),
       ),
     );
